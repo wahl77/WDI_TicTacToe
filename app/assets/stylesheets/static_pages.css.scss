@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.game {
-	width:906px;
+#game {
+	width:907px;
+	height:906px;
 	margin: 0 auto;
 	overflow: hidden;
 	/*padding: 10px 10px;/**/
@@ -12,11 +13,20 @@
 	text-align:center;
 }
 
+#game div{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	float:left;
+	text-align: center;
+	font-size: 200px;
+	border:1px solid black;/**/
+}
+
 #top-row > div, #mid-row >div, #bottom-row>div {
 	width:300px;
 	height:300px;
 	background-color:red;
-	border:1px solid black;/**/
 	float: left;
 	overflow:hidden;
 	font-size: 200px;
