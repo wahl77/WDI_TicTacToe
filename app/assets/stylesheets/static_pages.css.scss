@@ -20,16 +20,17 @@
 	float:left;
 	text-align: center;
 	font-size: 200px;
-	border:1px solid black;/**/
+	border:1px solid white;/**/
 }
 
 #top-row > div, #mid-row >div, #bottom-row>div {
 	width:300px;
 	height:300px;
-	background-color:red;
+	background-color:black;
 	float: left;
 	overflow:hidden;
 	font-size: 200px;
+	color: white;
 	text-align:center;
 }
 
