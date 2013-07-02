@@ -1,6 +1,15 @@
 %h1 StaticPages#index
 %p Find me in app/views/static_pages/index#html#haml
 
+- User.all.each do |user| 
+  = link_to user.uun, user_path(user)
+  
+  %br
+
+= link_to "New User", new_user_path
+
+
+
 %div#game
   %div#top-row
     %div#t_left#0

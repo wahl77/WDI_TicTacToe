@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: FILL_ME_IN_development
+  database: TicTacToe_development
   pool: 5
   username: <%= ENV['DB_USER'] %> 
   password: <%= ENV['DB_PASS'] %>
@@ -40,7 +40,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: FILL_ME_IN_test
+  database: TicTacToe_test
   pool: 5
   username: <%= ENV['DB_USER'] %> 
   password: <%= ENV['DB_PASS'] %>
@@ -48,7 +48,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: FILL_ME_IN_production
+  database: TicTacToe_production
   pool: 5
   username: <%= ENV['DB_USER'] %> 
   password: <%= ENV['DB_PASS'] %>
