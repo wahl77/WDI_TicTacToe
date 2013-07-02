@@ -10,10 +10,9 @@ $(document).ready(function(){
 	for (var i = 0; i < board.length; ++i){
 		board[i] = i;
 	}
-	
+
 	$('div').on("click", put_value);
-	
-	
+		
 	/* Start a new game */
 	function start_new_game(){
 		window.location.href = window.location.href;
@@ -46,8 +45,7 @@ $(document).ready(function(){
 			/* Swap players */ 	
 			x = !x			
 		}
-	}
-	
+	}	
 	
 	/* Returns true if game is a draw */
 	function is_draw(board){
@@ -57,8 +55,7 @@ $(document).ready(function(){
 			}
 		}
 		return true;
-	}
-	
+	}	
 	
 	/* Check if all elements in an array are equal */
 	function is_equal(array){
@@ -77,7 +74,7 @@ $(document).ready(function(){
 	
 	/* Find if the game is over */
 	function check_for_win(board){
-		if (
+		return (
 			is_equal([board[0], board[1], board[2]]) ||
 			is_equal([board[3], board[4], board[5]]) ||
 			is_equal([board[6], board[7], board[8]]) ||
@@ -86,10 +83,7 @@ $(document).ready(function(){
 			is_equal([board[2], board[5], board[8]]) ||
 			is_equal([board[0], board[4], board[8]]) ||
 			is_equal([board[2], board[4], board[6]]) 			
-			){      
-			return true
-		} 
-		return false	
+		)
 	}
 	
 });

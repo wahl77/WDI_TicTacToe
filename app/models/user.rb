@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :uun
+  has_secure_password
+  attr_accessible :uun, :password, :password_confirmation
   has_many :games
   
   validates:uun,

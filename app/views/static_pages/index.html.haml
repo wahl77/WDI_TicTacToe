@@ -1,5 +1,5 @@
-%h1 StaticPages#index
-%p Find me in app/views/static_pages/index#html#haml
+%h1 TicTacToe
+%p The best way to play Tic Tac Toe online
 
 - User.all.each do |user| 
   = link_to user.uun, user_path(user)
@@ -10,17 +10,35 @@
 
 
 
-%div#game
-  %div#top-row
-    %div#t_left#0
-    %div#t_mid#1
-    %div#t_right#2
-  %div#mid-row
-    %div#m_left#3
-    %div#m_right#4
-    %div#m_mid#5
-  %div#bottom-row
-    %div#b_left#6
-    %div#b_mid#7
-    %div#b_right#8
-    
+.container
+  .row
+    .span4#t_left#0
+    .span4#t_right#1
+    .span4#t_right#2
+  .row
+    .span4#t_left#3
+    .span4#t_right#4
+    .span4#t_right#5
+  .row
+    .span4#t_left#6
+    .span4#t_right#7
+    .span4#t_right#8
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
