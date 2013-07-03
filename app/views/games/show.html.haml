@@ -1,0 +1,11 @@
+%h1
+  This is the game for
+  = @game.name
+  
+played between
+= @game.player1.uun
+and
+= @game.player2.uun
+%br
+%br
+= render partial:"static_pages/board"

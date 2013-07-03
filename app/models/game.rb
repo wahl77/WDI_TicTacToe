@@ -13,6 +13,10 @@ class Game < ActiveRecord::Base
     # From all the moves, check if the game has a winner
   end
   
+  def current_player
+    return self.moves.length % 2 == 0 ? :player1 : :player2
+  end
+  
   
   
 end

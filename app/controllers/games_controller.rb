@@ -3,7 +3,14 @@ class GamesController < ApplicationController
   end
 
   def create
-    Game.create(params[:game])
+    
+    game = Game.new
+    game.player1 = current_user
+    game.player2 = User.find(params[:game][:player2])
+    game.name = params[:game][:name]
+    
+    game.save
+    redirect_to root_path
     
   end
 
@@ -11,5 +18,9 @@ class GamesController < ApplicationController
   end
 
   def udpate
+  end
+  
+  def show
+    @game = Game.find(params[:id])
   end
 end

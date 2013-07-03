@@ -1,0 +1,7 @@
+= form_for Game.new do |f|
+  = f.label :name
+  = f.text_field :name
+  
+  = f.select(:player2, options_for_select(@users.map{|user| [user.uun, user.id]}))
+  
+  = f.submit

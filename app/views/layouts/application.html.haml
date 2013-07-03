@@ -25,7 +25,7 @@
                 
               - else
                 .btn
-                  = link_to "Home", "/user"
+                  = link_to "Home", "/users/#{current_user.id}"
                   
                 Hello
                 = current_user.uun

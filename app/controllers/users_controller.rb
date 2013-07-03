@@ -16,5 +16,8 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    
+    @users = User.all
+    @users.delete(@user)
   end
 end

@@ -1,7 +1,18 @@
-%h1 Show Records for 
-= @user.uun
+%h1 
+  Show Records for 
+  = @user.uun
 
+
+Create a new game
+= render partial:"/games/form"
 
 He has 
 = @user.games.count 
 Games
+
+
+%h3
+  Current Games
+%ul  
+  - Game.all.each do |game|
+    %li= link_to game.name, game_path(game)
