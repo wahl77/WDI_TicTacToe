@@ -11,6 +11,8 @@ RailsProject::Application.routes.draw do
   
   get "/logout" => "sessions#destroy", as:"logout"
   
+  get "/games/:id/get_moves" => "moves#get_moves", as:"get_moves"
+  
   resources :users
   
   resources :games do 
